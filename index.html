@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -20,7 +20,7 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a href="#top" class="brand" aria-label="Mercool Solutions Limited home">
-          <span class="brand-mark">M</span>
+          <img src="log.jpeg" alt="Mercool Solutions Limited logo" class="brand-logo" />
           <span class="brand-text">
             <strong>MERCOOL</strong>
             <small>SOLUTIONS LIMITED</small>
@@ -92,8 +92,8 @@
       </section>
 
       <section id="about" class="section about">
-        <div class="container section-grid">
-          <div class="text-block">
+        <div class="container section-grid reveal-group">
+          <div class="text-block reveal-item">
             <span class="section-tag">Company Overview</span>
             <h2>Reliable engineering solutions for a better tomorrow.</h2>
             <p>
@@ -111,8 +111,9 @@
             </p>
           </div>
 
-          <div class="info-panel">
-            <div class="mini-card">
+          <div class="info-panel reveal-item">
+            <div class="mini-card accent-card">
+              <span class="card-kicker">01 / Perspective</span>
               <h3>Vision</h3>
               <p>
                 To be a leading engineering company recognized for excellence and
@@ -120,6 +121,7 @@
               </p>
             </div>
             <div class="mini-card">
+              <span class="card-kicker">02 / Commitment</span>
               <h3>Mission</h3>
               <p>
                 To deliver high-quality engineering services through professionalism,
@@ -128,6 +130,7 @@
               </p>
             </div>
             <div class="mini-card values">
+              <span class="card-kicker">03 / Principles</span>
               <h3>Core Values</h3>
               <ul>
                 <li>Professionalism</li>
@@ -149,10 +152,11 @@
             <h2>Integrated engineering expertise under one roof.</h2>
           </div>
 
-          <div class="service-grid">
+          <div class="service-grid reveal-group">
             <article class="service-card">
-              <div class="icon">01</div>
+              <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4.2 4.2 0 0 0-5.5 5.5L4 17v3h3l5.2-5.2a4.2 4.2 0 0 0 5.5-5.5l-2.2 2.2-2.8-.8-.8-2.8 2.2-2.2Z"/><path d="m13 13 6 6"/></svg></div>
               <h3>Mechanical Engineering</h3>
+              <p>Practical systems and maintenance expertise for dependable industrial performance.</p>
               <ul>
                 <li>Mechanical system design</li>
                 <li>Equipment installation and commissioning</li>
@@ -163,8 +167,9 @@
             </article>
 
             <article class="service-card">
-              <div class="icon">02</div>
+                <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M5.6 6.5c1.8 1.4 3.9 2.1 6.4 2.1s4.6-.7 6.4-2.1M5.6 17.5c1.8-1.4 3.9-2.1 6.4-2.1s4.6.7 6.4 2.1"/><path d="M7 3.8c-2 2.2-3.1 5-3.1 8.2s1.1 6 3.1 8.2M17 3.8c2.2 2.2 3.1 5 3.1 8.2s-1.1 6-3.1 8.2"/></svg></div>
               <h3>Cooling & Refrigeration</h3>
+              <p>Efficient climate and cold-chain solutions designed around your operating needs.</p>
               <ul>
                 <li>Air conditioning installation</li>
                 <li>Cold room installation and maintenance</li>
@@ -175,8 +180,9 @@
             </article>
 
             <article class="service-card">
-              <div class="icon">03</div>
+              <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m13 2-8 12h6l-1 8 8-12h-6l1-8Z"/></svg></div>
               <h3>Electrical Installation</h3>
+              <p>Safe, compliant power systems that keep homes, facilities, and operations moving.</p>
               <ul>
                 <li>Residential & commercial wiring</li>
                 <li>Industrial electrical installation</li>
@@ -318,15 +324,15 @@
             <h2>Trusted by leading businesses and partners.</h2>
           </div>
 
-          <div class="client-grid">
-            <div>Shanta Gold Mining</div>
-            <div>Mtanga Farm Limited</div>
-            <div>Key Largo Limited</div>
-            <div>Slipway Hotel</div>
-            <div>Chura General Supply</div>
-            <div>Harlos Container Limited</div>
-            <div>Mivinjeni Area, 1 Kilwa Rd</div>
-            <div>Dar es Salaam - Tanzania</div>
+          <div class="client-grid reveal-group">
+            <div class="client-card"><span class="client-mark">SG</span><span>Shanta Gold Mining</span></div>
+            <div class="client-card"><span class="client-mark">MF</span><span>Mtanga Farm Limited</span></div>
+            <div class="client-card"><span class="client-mark">KL</span><span>Key Largo Limited</span></div>
+            <div class="client-card"><span class="client-mark">SH</span><span>Slipway Hotel</span></div>
+            <div class="client-card"><span class="client-mark">CG</span><span>Chura General Supply</span></div>
+            <div class="client-card"><span class="client-mark">HC</span><span>Harlos Container Limited</span></div>
+            <div class="client-card"><span class="client-mark">MA</span><span>Mivinjeni Area, 1 Kilwa Rd</span></div>
+            <div class="client-card"><span class="client-mark">TZ</span><span>Dar es Salaam - Tanzania</span></div>
           </div>
 
           <p class="quote">
@@ -372,9 +378,9 @@
 
     <footer id="contact" class="site-footer">
       <div class="container footer-grid">
-        <div>
+        <div class="footer-intro">
           <a href="#top" class="brand footer-brand">
-            <span class="brand-mark">M</span>
+            <img src="log.jpeg" alt="Mercool Solutions Limited logo" class="brand-logo" />
             <span class="brand-text">
               <strong>MERCOOL</strong>
               <small>SOLUTIONS LIMITED</small>
@@ -383,6 +389,31 @@
           <p>
             “Engineering Excellence Through Innovation, Quality, and Reliability.”
           </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">f</a>
+            <a href="https://wa.me/255713449705" target="_blank" rel="noreferrer" aria-label="WhatsApp">wa</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#projects">Key Projects</a></li>
+            <li><a href="#clients">Our Clients</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="#services">Mechanical Engineering</a></li>
+            <li><a href="#services">Cooling & Refrigeration</a></li>
+            <li><a href="#services">Electrical Installation</a></li>
+            <li><a href="#contact">Request a consultation</a></li>
+          </ul>
         </div>
 
         <div>
@@ -390,10 +421,10 @@
           <ul class="contact-list">
             <li>Physical Address: Kigamboni Area, Dar es Salaam, Tanzania</li>
             <li>Postal Address: P.O. Box 36688, Dar es Salaam, Tanzania</li>
-            <li>Email: mercooltz@gmail.com</li>
+            <li>Email: <a href="mailto:mercooltz@gmail.com">mercooltz@gmail.com</a></li>
             <li>Website: www.mercool.tz</li>
             <li>TIN: 153-935-394</li>
-            <li>Telephone: +255 713 449 705 / +255 754 449 705</li>
+            <li>Telephone: <a href="tel:+255713449705">+255 713 449 705</a> / <a href="tel:+255754449705">+255 754 449 705</a></li>
           </ul>
         </div>
       </div>
@@ -404,6 +435,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="chat-widget">
+      <button class="chat-toggle" type="button" aria-label="Open Mercool support chat" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.8 17.2 4 20v-4.7A7.8 7.8 0 0 1 3 11c0-4.4 4-8 9-8s9 3.6 9 8-4 8-9 8a10 10 0 0 1-5.2-1.8Z"/><path d="M8 10.5h.01M12 10.5h.01M16 10.5h.01"/></svg>
+      </button>
+      <section class="chat-panel" aria-label="Mercool support chat" hidden>
+        <div class="chat-head"><div><span class="status-dot"></span><strong>Mercool support</strong><small>Frontend enquiry assistant</small></div><button class="chat-close" type="button" aria-label="Close chat">&times;</button></div>
+        <div class="chat-body"><div class="chat-message">Hello. Welcome to Mercool Solutions.<br /><br />How can we help you?</div><p class="chat-note">Choose an option to start an enquiry. This demo is ready to connect to an AI service.</p><div class="chat-options"><a href="#services">Our Services</a><a href="#contact">Request a Quote</a><a href="#contact">Contact Us</a><a href="https://wa.me/255713449705" target="_blank" rel="noreferrer">WhatsApp</a><a href="#about">About the Company</a></div></div>
+      </section>
+    </div>
 
     <script src="script.js"></script>
   </body>
