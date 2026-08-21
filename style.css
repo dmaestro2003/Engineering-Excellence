@@ -806,3 +806,23 @@ h1, h2, h3, .brand-text { font-family: "Space Grotesk", sans-serif; }
 @media (max-width: 980px) { .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .main-nav { background: rgba(6,21,33,.97); } .main-nav a { color: #fff; } }
 @media (max-width: 620px) { .footer-grid { grid-template-columns: 1fr; gap: 30px; } .brand { min-width: 0; } .nav-actions .btn { display: none; } .chat-widget { right: 16px; bottom: 16px; } .chat-toggle { width: 54px; height: 54px; } .text-block h2, .section-head h2 { font-size: clamp(2rem, 9vw, 2.6rem); } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } .reveal-item, .reveal-group > * { opacity: 1; transform: none; } }
+
+/* Keep hero statistics legible over the photography. */
+.hero .metrics { gap: 12px; margin-top: 44px; }
+.hero .metric-card { min-height: 104px; padding: 20px 18px; background: rgba(5, 24, 43, .82); border: 1px solid rgba(255, 255, 255, .2); box-shadow: 0 12px 28px rgba(0, 0, 0, .2); }
+.hero .metric-card strong { color: #56d7ee; font-family: "Space Grotesk", sans-serif; font-size: clamp(1.75rem, 3vw, 2.65rem); }
+.hero .metric-card span { color: rgba(255, 255, 255, .82); font-size: .66rem; font-weight: 700; letter-spacing: .1em; }
+.hero .metric-card:hover { transform: translateY(-4px); border-color: rgba(86, 215, 238, .65); }
+@media (max-width: 700px) {
+  .hero h1 { font-size: clamp(3rem, 11vw, 5.5rem); }
+  .hero .lead { font-size: 1rem; line-height: 1.65; }
+  .hero .metrics { position: relative; top: -56px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 32px; margin-bottom: 20px; }
+  .hero .metric-card { min-height: 88px; padding: 16px 14px; }
+  .hero-content { padding-bottom: 112px; }
+}
+
+@media (min-width: 701px) and (max-width: 980px) {
+  .hero .metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .hero .metric-card { min-height: 96px; padding: 18px 14px; }
+  .hero .metric-card span { font-size: .58rem; letter-spacing: .06em; }
+}
